@@ -1,17 +1,18 @@
-#include<iostream>
-#include<string>
-#include<fstream>
-#include<sstream>
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <sstream>
 #include "bankaccount.h"
 
-
-
-BankAccount::BankAccount(const std::string& name, const std::string& address, const std::string& tele_number)
-    : name_(name), address_(address), tele_number_(tele_number) {
-    generate_iban();
+BankAccount::BankAccount(const std::string &name, const std::string &address, const std::string &tele_number)
+    : name_(name), address_(address), tele_number_(tele_number)
+{
+    generate_iban(); // call generate iban function when creating new object
 }
-std::unordered_map<std::string, BankAccount> all_accounts_;
-std::string input_file = "data.txt";
+std::unordered_map<std::string, BankAccount> all_accounts_; // place to store all accounts
+std::string input_file = "data.txt";                        // default text file path
+/**
+ * Creates new bankaccount with user given values*/
 
 void BankAccount::create_account(BankAccount account)
 {
@@ -22,62 +23,92 @@ void BankAccount::create_account(BankAccount account)
     std::cout << "Input name: ";
     std::getline(std::cin, name);
     account.set_name(name);
+
     std::cout << "Input address: ";
     std::getline(std::cin, address);
     account.set_address(address);
+
     std::cout << "Input telephone number: ";
     std::getline(std::cin, tele_number);
     account.set_tele_num(tele_number);
+
     all_accounts_[iban_] = account;
     std::cout << "Account created with the IBAN number: "
               << account.iban_ << std::endl;
     write_to_file(all_accounts_, input_file);
-
 }
-int BankAccount::get_money() const{
+int BankAccount::get_money() const
+{
     return money_;
 }
-void BankAccount::write_to_file(const std::unordered_map<std::string, BankAccount>& all_accounts, const std::string& filename)
+/*Function overwrites file as new data is inputted*/
+void BankAccount::write_to_file(const std::unordered_map<std::string, BankAccount> &all_accounts, const std::string &filename)
 {
     std::ofstream file_object(filename);
-    if (!file_object){
+    if (!file_object) // if file cannot be opened
+    {
         std::cout << "Error! The file couldn't be opened." << std::endl;
         return;
     }
 
-    for(const auto& acc : all_accounts){
-        const std::string& iban = acc.first;
-        const BankAccount& account = acc.second;
+    for (const auto &acc : all_accounts)
+    {
+        const std::string &iban = acc.first;
+        const BankAccount &account = acc.second;
 
-        file_object << "IBAN: "<<iban << std::endl;
-        file_object << "NAME: "<<account.get_name() << std::endl;
-        file_object << "ADDRESS: "<<account.get_address() << std::endl;
-        file_object << "PHONE NUM: "<<account.get_tele_num() << std::endl;
-        file_object << "MONEY: "<<account.get_money() << std::endl;
+        file_object << "IBAN: " << iban << std::endl;
+        file_object << "NAME: " << account.get_name() << std::endl;
+        file_object << "ADDRESS: " << account.get_address() << std::endl;
+        file_object << "PHONE NUM: " << account.get_tele_num() << std::endl;
+        file_object << "MONEY: " << account.get_money() << std::endl;
+        if (!account.other_accs_.empty())
+        {
+            file_object << "OTHER ACCOUNTS: " << std::endl;
+            for (auto acc : account.other_accs_) // loop writes the data if user has multiple accounts
+            {
+                file_object << "NAME: " << acc.first << std::endl;
+                file_object << "MONEY: " << acc.second << std::endl;
+            }
+        }
     }
 
     file_object.close();
 }
-
-
+/*function adds money*/
 void BankAccount::save_money(int money)
 {
-    money_ += money;
-    write_to_file(all_accounts_, input_file);   
+    if (money > 0)
+    {
+        money_ += money;
+    }
+    else
+        return;
+    write_to_file(all_accounts_, input_file);
 }
+/*function takes money from account*/
 void BankAccount::take_money(int money)
 {
     money_ -= money;
     write_to_file(all_accounts_, input_file);
 }
-void BankAccount::print() const {
+/*Function prints account data*/
+void BankAccount::print() const
+{
     std::cout << "Name: " << name_ << std::endl
               << "Address: " << address_ << std::endl
               << "Phone number: " << tele_number_ << std::endl
               << "Money: " << money_ << std::endl;
+    for (auto acc : other_accs_)
+    {
+        std::cout << "Account name: "
+                  << acc.first
+                  << "\n"
+                  << "Money: "
+                  << acc.second
+                  << "\n";
+    }
 }
-
-
+/*some setters and getters*/
 void BankAccount::set_name(std::string name)
 {
     name_ = name;
@@ -102,16 +133,89 @@ std::string BankAccount::get_tele_num() const
 {
     return tele_number_;
 }
-
+std::string BankAccount::get_iban() const
+{
+    return iban_;
+}
+// creates other account for user ie. Savings account
+void BankAccount::create_other_account(BankAccount *account)
+{
+    std::string new_acc = "";
+    int money = 0;
+    std::cout << "Input id for your new account: ";
+    std::getline(std::cin, new_acc);
+    if (account->other_accs_.find(new_acc) != account->other_accs_.end())
+    {
+        std::cout << "Account id has to be unique. \n";
+        return;
+    }
+    std::cout << "How much money would you like to deposit to your new account? : ";
+    std::cin >> money;
+    std::cin.ignore();
+    if (money < 0)
+    {
+        std::cout << "Error! Cannot deposit a negative number. \n";
+        return;
+    }
+    account->other_accs_[new_acc] = money;
+}
+/**
+ * Function is used to put money on sub accounts or take money from them
+ */
+void BankAccount::manage_other_account(BankAccount *account)
+{
+    std::string selected_acc = "";
+    std::cout << "Please select what account you would like to modify. \n";
+    for (auto account : account->other_accs_)
+    {
+        std::cout << account.first << "\n";
+    }
+    std::getline(std::cin, selected_acc);
+    if (account->other_accs_.find(selected_acc) == account->other_accs_.end())
+    {
+        std::cout << "No account found."
+                  << "\n";
+        return;
+    }
+    std::string user_choise = "";
+    std::cout << "Press 1 to put money into account. \n";
+    std::cout << "Press 2 to take money from account. \n";
+    std::getline(std::cin, user_choise);
+    if (user_choise == "1")
+    {
+        int money = 0;
+        std::cout << "Enter the amount: ";
+        std::cin >> money;
+        std::cin.ignore();
+        account->other_accs_[selected_acc] += money;
+    }
+    if (user_choise == "2")
+    {
+        int money = 0;
+        std::cout << "Enter withdraw amount: ";
+        std::cin >> money;
+        std::cin.ignore();
+        if (account->other_accs_[selected_acc] < money)
+        {
+            std::cout << "Cant withdraw more than you have. \n";
+            return;
+        }
+        account->other_accs_[selected_acc] -= money;
+    }
+    write_to_file(all_accounts_, input_file);
+}
+/*Function for generatin iban*/
 int BankAccount::running_number_ = 0;
 void BankAccount::generate_iban()
 {
     ++running_number_;
     std::string suffix = "";
-    if(running_number_ < 10){
+    if (running_number_ < 10)
+    {
         suffix.append("0");
     }
-    else if(running_number_ > 99){
+    else if (running_number_ > 99)
+    {
         std::cout << "Too many bank accounts" << std::endl;
     }
     suffix.append(std::to_string(running_number_));
