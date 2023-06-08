@@ -113,6 +113,7 @@ void print_help()
     cout << "Press 4 to withdraw money from account." << endl;
     cout << "Press 5 to print account information." << endl;
     cout << "Press 6 to add new account to your current." << endl;
+    cout << "Press 7 to manage your other accounts." << endl;
     cout << "Press Q or q to quit the program." << endl;
 }
 /*
