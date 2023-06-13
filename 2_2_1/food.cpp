@@ -17,6 +17,7 @@ void print_food_info(Food& food)
     }
     
 }
+//testaan
 void add_to_menu(Food* food)
 {
     menu.push_back(food);
