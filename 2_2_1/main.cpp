@@ -2,7 +2,13 @@
 #include<string>
 #include"includes/food.h"
 #include"includes/food.cpp"
-
+/*
+    Simple restaurant program.
+    User can add to order
+    Check current order
+    Checkout(quit)
+    Add new items to menu
+*/
 
 int main()
 {
@@ -22,6 +28,7 @@ int main()
             std::cout << "2. Check current order \n";
             std::cout << "3. Check the menu\n";
             std::cout << "4. Checkout\n";
+            std::cout << "5. Add new item to the menu\n";
             int choice {};
             std::cin.clear();
             std::cin >> choice;
@@ -82,6 +89,10 @@ int main()
             current_total_price = 0;
             keep_looping = false;
             continue;
+        }
+        case 5:
+        {
+            create_food_and_add_to_menu();
         }
         default:
             std::cout << "Unknown command!\n";

@@ -27,9 +27,9 @@ void add_to_menu(Food* food)
 {
     menu.push_back(food);
 }
+//function creates a new food and adds it to menu
 void create_food_and_add_to_menu()
 {
-    Food food;
     std::string food_name{};
     float price {0};
     std::string ingredient{};
@@ -38,10 +38,20 @@ void create_food_and_add_to_menu()
     std::getline(std::cin >> std::ws, food_name);
     std::cout << "Input price: ";
     std::cin >> price;
-    while(true){
-        //TODO: loop and ask for the ingredients
+    std::vector<std::string> ingredients;
+    bool stop = false;
+    while(!stop){
+        std::string ingredient {};
+        std::cout << "Input ingredients or press Q to quit: ";
+        std::getline(std::cin >> std::ws, ingredient);
+        if(ingredient == "Q" or ingredient == "q"){
+            stop = true;
+            std::cin.clear();
+        }
+        ingredients.push_back(ingredient);
     }
-
+    Food* new_food = new Food(food_name, price, ingredients);
+    add_to_menu(new_food);
 
 }
 //function loops the menu and and print it
