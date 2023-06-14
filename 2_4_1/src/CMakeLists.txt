@@ -1,0 +1,2 @@
+add_library(print_file_data STATIC print_file_data.cpp)
+add_library(parse_arguments STATIC parse_arguments.cpp)

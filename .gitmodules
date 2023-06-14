@@ -1,0 +1,6 @@
+[submodule "2_4_1/external/external/cxxopts"]
+	path = 2_4_1/external/external/cxxopts
+	url = https://github.com/jarro2783/cxxopts.git
+[submodule "2_4_1/external/cxxops"]
+	path = 2_4_1/external/cxxops
+	url = https://github.com/jarro2783/cxxopts.git
