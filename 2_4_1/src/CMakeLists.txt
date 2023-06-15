@@ -1,0 +1,6 @@
+add_library(print_file_data STATIC print_file_data.cpp)
+add_library(parse_arguments STATIC parse_arguments.cpp)
+add_library(print_file_lines STATIC print_file_lines.cpp)
+add_library(print_file_wordcount STATIC print_file_wordcount.cpp)
+add_library(print_file_chars STATIC print_file_chars.cpp)
+add_library(calculate_file_size STATIC calculate_file_size.cpp)
