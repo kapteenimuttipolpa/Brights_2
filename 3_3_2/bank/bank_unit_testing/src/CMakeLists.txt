@@ -1,0 +1,1 @@
+add_library(bankaccount STATIC bankaccount.cpp)
