@@ -1,0 +1,573 @@
+Time: 00:00
+Temperature: 9
+humidity: 59
+Winds speed: 4.19469
+Atmospheric pressure: 1003.78Time: 00:10
+Temperature: 9
+humidity: 62
+Winds speed: 3.59132
+Atmospheric pressure: 1003.85Time: 00:20
+Temperature: 11
+humidity: 65
+Winds speed: 2.5915
+Atmospheric pressure: 1004.09Time: 00:30
+Temperature: 12
+humidity: 65
+Winds speed: 3.45323
+Atmospheric pressure: 1004.98Time: 00:40
+Temperature: 12
+humidity: 56
+Winds speed: 4.10659
+Atmospheric pressure: 1005.03Time: 00:50
+Temperature: 12
+humidity: 65
+Winds speed: 1.67412
+Atmospheric pressure: 1005.1Time: 01:00
+Temperature: 13
+humidity: 56
+Winds speed: 3.63911
+Atmospheric pressure: 1005.11Time: 01:10
+Temperature: 13
+humidity: 62
+Winds speed: 4.0696
+Atmospheric pressure: 1005.45Time: 01:20
+Temperature: 14
+humidity: 57
+Winds speed: 2.93029
+Atmospheric pressure: 1005.53Time: 01:30
+Temperature: 14
+humidity: 63
+Winds speed: 2.27486
+Atmospheric pressure: 1005.54Time: 01:40
+Temperature: 15
+humidity: 58
+Winds speed: 4.08149
+Atmospheric pressure: 1005.7Time: 01:50
+Temperature: 15
+humidity: 65
+Winds speed: 3.79928
+Atmospheric pressure: 1005.75Time: 02:00
+Temperature: 16
+humidity: 59
+Winds speed: 3.45906
+Atmospheric pressure: 1005.93Time: 02:10
+Temperature: 16
+humidity: 61
+Winds speed: 2.37407
+Atmospheric pressure: 1005.97Time: 02:20
+Temperature: 16
+humidity: 65
+Winds speed: 4.22303
+Atmospheric pressure: 1006.26Time: 02:30
+Temperature: 16
+humidity: 68
+Winds speed: 2.42434
+Atmospheric pressure: 1006.33Time: 02:40
+Temperature: 16
+humidity: 67
+Winds speed: 3.23569
+Atmospheric pressure: 1006.42Time: 02:50
+Temperature: 16
+humidity: 58
+Winds speed: 4.94346
+Atmospheric pressure: 1006.49Time: 03:00
+Temperature: 16
+humidity: 59
+Winds speed: 3.92219
+Atmospheric pressure: 1006.51Time: 03:10
+Temperature: 16
+humidity: 61
+Winds speed: 3.25786
+Atmospheric pressure: 1006.52Time: 03:20
+Temperature: 16
+humidity: 58
+Winds speed: 3.19828
+Atmospheric pressure: 1006.66Time: 03:30
+Temperature: 16
+humidity: 69
+Winds speed: 1.76116
+Atmospheric pressure: 1006.67Time: 03:40
+Temperature: 16
+humidity: 61
+Winds speed: 2.77141
+Atmospheric pressure: 1006.71Time: 03:50
+Temperature: 17
+humidity: 70
+Winds speed: 3.35905
+Atmospheric pressure: 1007.04Time: 04:00
+Temperature: 17
+humidity: 55
+Winds speed: 2.60494
+Atmospheric pressure: 1007.04Time: 04:10
+Temperature: 17
+humidity: 66
+Winds speed: 2.23011
+Atmospheric pressure: 1007.16Time: 04:20
+Temperature: 17
+humidity: 58
+Winds speed: 3.49051
+Atmospheric pressure: 1007.23Time: 04:30
+Temperature: 17
+humidity: 61
+Winds speed: 3.70945
+Atmospheric pressure: 1007.32Time: 04:40
+Temperature: 17
+humidity: 55
+Winds speed: 4.03591
+Atmospheric pressure: 1007.33Time: 04:50
+Temperature: 17
+humidity: 57
+Winds speed: 2.39644
+Atmospheric pressure: 1007.35Time: 05:00
+Temperature: 18
+humidity: 70
+Winds speed: 2.77275
+Atmospheric pressure: 1007.41Time: 05:10
+Temperature: 18
+humidity: 58
+Winds speed: 2.87084
+Atmospheric pressure: 1007.6Time: 05:20
+Temperature: 18
+humidity: 58
+Winds speed: 3.60356
+Atmospheric pressure: 1007.61Time: 05:30
+Temperature: 19
+humidity: 66
+Winds speed: 3.22961
+Atmospheric pressure: 1007.68Time: 05:40
+Temperature: 19
+humidity: 66
+Winds speed: 3.67317
+Atmospheric pressure: 1007.71Time: 05:50
+Temperature: 20
+humidity: 60
+Winds speed: 4.11771
+Atmospheric pressure: 1007.74Time: 06:00
+Temperature: 20
+humidity: 69
+Winds speed: 3.42405
+Atmospheric pressure: 1007.75Time: 06:10
+Temperature: 20
+humidity: 66
+Winds speed: 3.86528
+Atmospheric pressure: 1007.82Time: 06:20
+Temperature: 20
+humidity: 70
+Winds speed: 2.53909
+Atmospheric pressure: 1007.96Time: 06:30
+Temperature: 21
+humidity: 58
+Winds speed: 4.1949
+Atmospheric pressure: 1008.04Time: 06:40
+Temperature: 21
+humidity: 67
+Winds speed: 3.24684
+Atmospheric pressure: 1008.25Time: 06:50
+Temperature: 21
+humidity: 68
+Winds speed: 3.15507
+Atmospheric pressure: 1008.34Time: 07:00
+Temperature: 21
+humidity: 60
+Winds speed: 2.27212
+Atmospheric pressure: 1008.4Time: 07:10
+Temperature: 21
+humidity: 59
+Winds speed: 4.34098
+Atmospheric pressure: 1008.55Time: 07:20
+Temperature: 21
+humidity: 55
+Winds speed: 4.11359
+Atmospheric pressure: 1008.57Time: 07:30
+Temperature: 21
+humidity: 68
+Winds speed: 3.72718
+Atmospheric pressure: 1008.6Time: 07:40
+Temperature: 21
+humidity: 57
+Winds speed: 3.78482
+Atmospheric pressure: 1008.63Time: 07:50
+Temperature: 22
+humidity: 58
+Winds speed: 5.11388
+Atmospheric pressure: 1008.64Time: 08:00
+Temperature: 22
+humidity: 61
+Winds speed: 5.12002
+Atmospheric pressure: 1008.76Time: 08:10
+Temperature: 22
+humidity: 61
+Winds speed: 2.91998
+Atmospheric pressure: 1008.76Time: 08:20
+Temperature: 22
+humidity: 70
+Winds speed: 2.94279
+Atmospheric pressure: 1008.78Time: 08:30
+Temperature: 22
+humidity: 66
+Winds speed: 4.91469
+Atmospheric pressure: 1008.8Time: 08:40
+Temperature: 22
+humidity: 61
+Winds speed: 3.6345
+Atmospheric pressure: 1008.83Time: 08:50
+Temperature: 22
+humidity: 66
+Winds speed: 3.82987
+Atmospheric pressure: 1008.92Time: 09:00
+Temperature: 22
+humidity: 68
+Winds speed: 3.18483
+Atmospheric pressure: 1008.93Time: 09:10
+Temperature: 23
+humidity: 65
+Winds speed: 3.11848
+Atmospheric pressure: 1008.94Time: 09:20
+Temperature: 23
+humidity: 58
+Winds speed: 2.05374
+Atmospheric pressure: 1008.99Time: 09:30
+Temperature: 23
+humidity: 58
+Winds speed: 3.61117
+Atmospheric pressure: 1009.09Time: 09:40
+Temperature: 23
+humidity: 65
+Winds speed: 3.26664
+Atmospheric pressure: 1009.26Time: 09:50
+Temperature: 24
+humidity: 60
+Winds speed: 2.44488
+Atmospheric pressure: 1009.41Time: 10:00
+Temperature: 24
+humidity: 58
+Winds speed: 2.699
+Atmospheric pressure: 1009.42Time: 10:10
+Temperature: 24
+humidity: 59
+Winds speed: 3.32932
+Atmospheric pressure: 1009.46Time: 10:20
+Temperature: 24
+humidity: 69
+Winds speed: 2.7846
+Atmospheric pressure: 1009.52Time: 10:30
+Temperature: 25
+humidity: 64
+Winds speed: 3.70305
+Atmospheric pressure: 1009.52Time: 10:40
+Temperature: 25
+humidity: 64
+Winds speed: 3.27107
+Atmospheric pressure: 1009.56Time: 10:50
+Temperature: 25
+humidity: 63
+Winds speed: 3.08087
+Atmospheric pressure: 1009.69Time: 11:00
+Temperature: 25
+humidity: 67
+Winds speed: 3.74392
+Atmospheric pressure: 1009.76Time: 11:10
+Temperature: 26
+humidity: 55
+Winds speed: 3.28666
+Atmospheric pressure: 1009.82Time: 11:20
+Temperature: 26
+humidity: 66
+Winds speed: 3.98284
+Atmospheric pressure: 1009.84Time: 11:30
+Temperature: 27
+humidity: 70
+Winds speed: 3.73397
+Atmospheric pressure: 1009.93Time: 11:40
+Temperature: 29
+humidity: 60
+Winds speed: 4.9968
+Atmospheric pressure: 1010.01Time: 11:50
+Temperature: 29
+humidity: 70
+Winds speed: 3.58357
+Atmospheric pressure: 1010.03Time: 12:00
+Temperature: 27
+humidity: 66
+Winds speed: 2.79337
+Atmospheric pressure: 1010.04Time: 12:10
+Temperature: 26
+humidity: 66
+Winds speed: 3.51771
+Atmospheric pressure: 1010.1Time: 12:20
+Temperature: 26
+humidity: 67
+Winds speed: 3.65367
+Atmospheric pressure: 1010.11Time: 12:30
+Temperature: 26
+humidity: 61
+Winds speed: 5.43923
+Atmospheric pressure: 1010.18Time: 12:40
+Temperature: 26
+humidity: 61
+Winds speed: 3.99888
+Atmospheric pressure: 1010.18Time: 12:50
+Temperature: 26
+humidity: 70
+Winds speed: 2.69553
+Atmospheric pressure: 1010.24Time: 13:00
+Temperature: 26
+humidity: 70
+Winds speed: 3.63706
+Atmospheric pressure: 1010.26Time: 13:10
+Temperature: 25
+humidity: 64
+Winds speed: 4.30846
+Atmospheric pressure: 1010.37Time: 13:20
+Temperature: 25
+humidity: 59
+Winds speed: 3.39322
+Atmospheric pressure: 1010.45Time: 13:30
+Temperature: 25
+humidity: 59
+Winds speed: 4.25379
+Atmospheric pressure: 1010.48Time: 13:40
+Temperature: 25
+humidity: 55
+Winds speed: 5.195
+Atmospheric pressure: 1010.59Time: 13:50
+Temperature: 25
+humidity: 68
+Winds speed: 2.51858
+Atmospheric pressure: 1010.61Time: 14:00
+Temperature: 24
+humidity: 59
+Winds speed: 4.28549
+Atmospheric pressure: 1010.62Time: 14:10
+Temperature: 24
+humidity: 67
+Winds speed: 6.07823
+Atmospheric pressure: 1010.63Time: 14:20
+Temperature: 24
+humidity: 55
+Winds speed: 2.97093
+Atmospheric pressure: 1010.64Time: 14:30
+Temperature: 24
+humidity: 56
+Winds speed: 5.20344
+Atmospheric pressure: 1010.69Time: 14:40
+Temperature: 24
+humidity: 61
+Winds speed: 3.62664
+Atmospheric pressure: 1010.74Time: 14:50
+Temperature: 23
+humidity: 59
+Winds speed: 2.89882
+Atmospheric pressure: 1010.85Time: 15:00
+Temperature: 23
+humidity: 68
+Winds speed: 2.80271
+Atmospheric pressure: 1010.98Time: 15:10
+Temperature: 23
+humidity: 68
+Winds speed: 3.48159
+Atmospheric pressure: 1011.06Time: 15:20
+Temperature: 23
+humidity: 69
+Winds speed: 3.77407
+Atmospheric pressure: 1011.16Time: 15:30
+Temperature: 23
+humidity: 63
+Winds speed: 3.87993
+Atmospheric pressure: 1011.17Time: 15:40
+Temperature: 23
+humidity: 61
+Winds speed: 2.60073
+Atmospheric pressure: 1011.19Time: 15:50
+Temperature: 22
+humidity: 56
+Winds speed: 3.00369
+Atmospheric pressure: 1011.26Time: 16:00
+Temperature: 22
+humidity: 61
+Winds speed: 2.61629
+Atmospheric pressure: 1011.43Time: 16:10
+Temperature: 22
+humidity: 61
+Winds speed: 4.19736
+Atmospheric pressure: 1011.45Time: 16:20
+Temperature: 22
+humidity: 60
+Winds speed: 2.73313
+Atmospheric pressure: 1011.55Time: 16:30
+Temperature: 22
+humidity: 61
+Winds speed: 3.38601
+Atmospheric pressure: 1011.64Time: 16:40
+Temperature: 22
+humidity: 59
+Winds speed: 3.41421
+Atmospheric pressure: 1011.68Time: 16:50
+Temperature: 22
+humidity: 65
+Winds speed: 3.82554
+Atmospheric pressure: 1011.73Time: 17:00
+Temperature: 22
+humidity: 60
+Winds speed: 2.95457
+Atmospheric pressure: 1011.79Time: 17:10
+Temperature: 22
+humidity: 66
+Winds speed: 4.63371
+Atmospheric pressure: 1011.89Time: 17:20
+Temperature: 21
+humidity: 66
+Winds speed: 2.98443
+Atmospheric pressure: 1011.95Time: 17:30
+Temperature: 21
+humidity: 55
+Winds speed: 3.58639
+Atmospheric pressure: 1011.97Time: 17:40
+Temperature: 21
+humidity: 60
+Winds speed: 3.74736
+Atmospheric pressure: 1012.16Time: 17:50
+Temperature: 20
+humidity: 65
+Winds speed: 2.77858
+Atmospheric pressure: 1012.28Time: 18:00
+Temperature: 20
+humidity: 58
+Winds speed: 4.66085
+Atmospheric pressure: 1012.7Time: 18:10
+Temperature: 20
+humidity: 64
+Winds speed: 3.81593
+Atmospheric pressure: 1012.8Time: 18:20
+Temperature: 20
+humidity: 65
+Winds speed: 2.92087
+Atmospheric pressure: 1012.85Time: 18:30
+Temperature: 20
+humidity: 65
+Winds speed: 3.26667
+Atmospheric pressure: 1013.06Time: 18:40
+Temperature: 19
+humidity: 67
+Winds speed: 3.38786
+Atmospheric pressure: 1013.08Time: 18:50
+Temperature: 19
+humidity: 57
+Winds speed: 3.01033
+Atmospheric pressure: 1013.14Time: 19:00
+Temperature: 19
+humidity: 62
+Winds speed: 4.06046
+Atmospheric pressure: 1013.18Time: 19:10
+Temperature: 19
+humidity: 66
+Winds speed: 2.77105
+Atmospheric pressure: 1013.2Time: 19:20
+Temperature: 19
+humidity: 64
+Winds speed: 2.94954
+Atmospheric pressure: 1013.24Time: 19:30
+Temperature: 19
+humidity: 68
+Winds speed: 4.42274
+Atmospheric pressure: 1013.24Time: 19:40
+Temperature: 19
+humidity: 64
+Winds speed: 5.44799
+Atmospheric pressure: 1013.27Time: 19:50
+Temperature: 19
+humidity: 57
+Winds speed: 4.23029
+Atmospheric pressure: 1013.31Time: 20:00
+Temperature: 19
+humidity: 65
+Winds speed: 3.89003
+Atmospheric pressure: 1013.31Time: 20:10
+Temperature: 19
+humidity: 57
+Winds speed: 2.03397
+Atmospheric pressure: 1013.69Time: 20:20
+Temperature: 18
+humidity: 60
+Winds speed: 3.60182
+Atmospheric pressure: 1013.75Time: 20:30
+Temperature: 18
+humidity: 64
+Winds speed: 3.39291
+Atmospheric pressure: 1013.91Time: 20:40
+Temperature: 18
+humidity: 66
+Winds speed: 4.2316
+Atmospheric pressure: 1013.99Time: 20:50
+Temperature: 18
+humidity: 67
+Winds speed: 2.80638
+Atmospheric pressure: 1014.07Time: 21:00
+Temperature: 17
+humidity: 60
+Winds speed: 3.28599
+Atmospheric pressure: 1014.07Time: 21:10
+Temperature: 17
+humidity: 58
+Winds speed: 2.3386
+Atmospheric pressure: 1014.12Time: 21:20
+Temperature: 17
+humidity: 64
+Winds speed: 3.32902
+Atmospheric pressure: 1014.15Time: 21:30
+Temperature: 17
+humidity: 57
+Winds speed: 3.97697
+Atmospheric pressure: 1014.21Time: 21:40
+Temperature: 16
+humidity: 67
+Winds speed: 3.78068
+Atmospheric pressure: 1014.25Time: 21:50
+Temperature: 16
+humidity: 67
+Winds speed: 2.4941
+Atmospheric pressure: 1014.54Time: 22:00
+Temperature: 16
+humidity: 55
+Winds speed: 4.10993
+Atmospheric pressure: 1014.64Time: 22:10
+Temperature: 16
+humidity: 67
+Winds speed: 3.5303
+Atmospheric pressure: 1014.81Time: 22:20
+Temperature: 16
+humidity: 58
+Winds speed: 4.63904
+Atmospheric pressure: 1014.87Time: 22:30
+Temperature: 15
+humidity: 61
+Winds speed: 3.49712
+Atmospheric pressure: 1015.25Time: 22:40
+Temperature: 14
+humidity: 59
+Winds speed: 3.30457
+Atmospheric pressure: 1015.28Time: 22:50
+Temperature: 14
+humidity: 63
+Winds speed: 3.03634
+Atmospheric pressure: 1015.5Time: 23:00
+Temperature: 14
+humidity: 66
+Winds speed: 2.48333
+Atmospheric pressure: 1015.64Time: 23:10
+Temperature: 14
+humidity: 57
+Winds speed: 4.19258
+Atmospheric pressure: 1015.68Time: 23:20
+Temperature: 13
+humidity: 60
+Winds speed: 2.60747
+Atmospheric pressure: 1015.73Time: 23:30
+Temperature: 12
+humidity: 57
+Winds speed: 4.09061
+Atmospheric pressure: 1016.46Time: 23:40
+Temperature: 12
+humidity: 59
+Winds speed: 4.54433
+Atmospheric pressure: 1017.45
