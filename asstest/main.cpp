@@ -2,6 +2,7 @@
 #include<iostream>
 #include "./includes/personal_finance.h"
 #include "./includes/utils.h"
+#include <stdexcept>
 #include <tuple>
 #include<vector>
 #include <string>
@@ -35,9 +36,10 @@ int main()
             print_totals(all_transactions, totals);
         }
         else if(choise == "4"){
-            int res = print_file_contents();
-            if(res == INVALID_FILE){
-                std::cout << "The file doesnt exist.\n";
+            try{
+                int res = print_file_contents();
+            }catch(std::runtime_error const&e){
+                std::cout << "Exception: " << e.what() << '\n';
                 print_possible_files();
                 continue;
             }
