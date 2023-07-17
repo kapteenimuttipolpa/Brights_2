@@ -1,0 +1,1 @@
+add_library(union STATIC union.cpp)
