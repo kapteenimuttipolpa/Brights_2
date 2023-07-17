@@ -3,20 +3,20 @@
 #include <iostream>
 int main() {
   TaggedUnion test;
-  test.set_type('C');
-  assert(test.get_union_type() == Type::human);
-  test.set_type(1000);
-  assert(test.get_union_type() == Type::robot);
-  test.set_type(10.2f);
-  assert(test.get_union_type() == Type::alien);
+  test.set_value('C');
+  assert(test.get_union_tag() == Type::human);
+  test.set_value(1000);
+  assert(test.get_union_tag() == Type::robot);
+  test.set_value(10.2f);
+  assert(test.get_union_tag() == Type::alien);
 
-  test.set_type(100);
+  test.set_value(100);
   test.print();
 
-  test.set_type('B');
+  test.set_value('B');
   test.print();
 
-  test.set_type(10.32f);
+  test.set_value(10.32f);
   test.print();
 
   TaggedUnion test2;
