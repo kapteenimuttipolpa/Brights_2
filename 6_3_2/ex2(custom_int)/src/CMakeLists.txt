@@ -1,0 +1,1 @@
+add_library(custom_int STATIC custom_int.cpp)
