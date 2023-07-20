@@ -8,8 +8,9 @@
 #include <stdexcept>
 #include <string>
 namespace c_file_read {
+static std::vector<new_line_read> all_lines;
 namespace fs = std::filesystem;
-std::vector<new_line_read> all_lines;
+// std::vector<new_line_read> all_lines;
 line_read::line_read() {
   file_handle = fopen("dog.txt", "r");
   read_full_file = fopen("dog.txt", "r");
@@ -22,6 +23,7 @@ line_read::~line_read() {
   fclose(read_full_file);
   file_handle = nullptr;
   read_full_file = nullptr;
+  all_lines.clear();
 }
 void line_read::print_next_line() {
   int symbol;
