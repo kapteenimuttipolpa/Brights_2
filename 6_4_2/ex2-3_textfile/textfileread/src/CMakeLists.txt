@@ -1,0 +1,1 @@
+add_library(c_file_read STATIC c_file_read)
