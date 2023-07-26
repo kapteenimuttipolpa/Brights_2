@@ -55,4 +55,9 @@ TEST_CASE("Test grid2d functionality") {
         utils::grid2d<int> temp_grid2(1, 1);
         CHECK(temp_grid2.empty() == false);
     }
+    SUBCASE("Test .at()") {
+        grid(0, 0) = 1;
+        CHECK(grid.at(0, 0) == 1);
+        CHECK_THROWS(grid.at(100, 100));
+    }
 }

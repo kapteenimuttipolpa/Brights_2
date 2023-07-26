@@ -35,7 +35,8 @@ template <typename T> class grid2d {
     using difference_type   = typename storage_type::difference_type;
     using size_type         = typename storage_type::size_type;
     // clang-format on
-    grid2d(size_type height, size_type width) : _height(height), _width(width) {
+    grid2d(const size_type height, const size_type width)
+        : _height(height), _width(width) {
         if (height < 0 or width < 0) {
             throw std::range_error("Negative size");
         }
@@ -46,19 +47,16 @@ template <typename T> class grid2d {
     }
     grid2d() noexcept = default;
     ~grid2d() noexcept {};
-    struct curr_pos {
-        int x;
-        int y;
-    };
     reference operator()(size_type height, size_type width) {
         if (width > _width or height > _height)
             throw std::out_of_range("");
         return _cells[height * _width + width];
     }
-    iterator at(size_type height, size_type width) {
+    value_type at(size_type height, size_type width) {
         // currently using vector so .at() will throw
         // if out of bounds
-        return _cells.at(height * width);
+        size_type index = height * _width + width;
+        return _cells.at(index);
     }
     void resize(size_type new_width, size_type new_height) {
         // return if nothing changes
