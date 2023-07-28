@@ -1,0 +1,1 @@
+add_library(animal STATIC animal.cpp)
