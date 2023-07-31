@@ -10,14 +10,23 @@
 namespace animals {
 dog::dog(species type, std::string &name) : m_type(type), m_name(name) {}
 cat::cat(species type, std::string &name) : m_type(type), m_name(name) {}
+unknown::unknown(species type, std::string &name)
+    : m_type(species::None), m_name("NO NAME") {}
 void dog::make_noise() {
     std::cout << "Woof woof i am dog and my name is: " << m_name << "\n";
 }
 void cat::make_noise() {
     std::cout << "Meow i am cat and my name is: " << m_name << "\n";
 }
-void animal::make_noise() { std::cout << "unknown animal type.\n"; }
-
+void unknown::make_noise() { std::cout << "unknown animal type.\n"; }
+/**
+ * @brief read_from file
+ * reads species and name from text file
+ * creates unique ptr to corresponding animal
+ * to all_animals vector
+ * @param file_name
+ * @return animal_vec
+ */
 animal_vec read_from_file(const std::string &file_name) {
     animal_vec all_animals;
     std::fstream file_object(file_name);
@@ -37,9 +46,11 @@ animal_vec read_from_file(const std::string &file_name) {
         } else if (species == "Cat") {
             all_animals.push_back(std::make_unique<cat>(species::Cat, name));
         } else {
-            all_animals.push_back(std::make_unique<animal>());
+            all_animals.push_back(
+                std::make_unique<unknown>(species::None, name));
         }
     }
+    file_object.close();
     return all_animals;
 }
 void print_animals(const animal_vec &all_animals) {
