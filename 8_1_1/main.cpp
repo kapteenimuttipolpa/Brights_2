@@ -21,16 +21,24 @@ void print_vector() {
 } // namespace ex2
 
 namespace ex3 {
-template <typename T> auto is_contiguous(T first, T last) {
-    auto const n = std::distance(first, last);
-    for (auto i = 0; i < n; ++i) {
-        if (*(std::next(first, i)) != *(std::next(std::addressof(*first), i))) {
+template <typename T> bool is_contiguous(const T &container) {
+    if (container.empty()) {
+        return true;
+    }
+
+    auto left_side_it = container.begin();
+    auto right_side_it = std::next(left_side_it);
+
+    while (right_side_it != container.end()) {
+        if (&(*right_side_it) != &(*left_side_it) + 1) {
             return false;
         }
+        ++left_side_it;
+        ++right_side_it;
     }
+
     return true;
 }
-
 } // namespace ex3
 
 int main() {
@@ -49,19 +57,18 @@ int main() {
     auto deq = std::deque<int>(100000);
     auto list = std::list<int>(100000);
     auto arr = std::array<int, 10000>();
-    auto vec = std::vector<int>(100);
-    std::vector<std::vector<int>> vec2d(1000000);
-    std::cout << std::boolalpha << ex3::is_contiguous(deq.begin(), deq.end())
-              << '\n';
-    std::cout << std::boolalpha << ex3::is_contiguous(list.begin(), list.end())
-              << '\n';
-    std::cout << std::boolalpha << ex3::is_contiguous(arr.begin(), arr.end())
-              << '\n';
-    std::cout << std::boolalpha << ex3::is_contiguous(vec.begin(), vec.end())
-              << '\n';
-
+    auto vec = std::vector<int>(10);
+    std::cout << std::boolalpha << ex3::is_contiguous(deq) << '\n';
+    std::cout << std::boolalpha << ex3::is_contiguous(list) << '\n';
+    std::cout << std::boolalpha << ex3::is_contiguous(arr) << '\n';
+    std::cout << std::boolalpha << ex3::is_contiguous(vec) << '\n';
+    std::vector<std::vector<int>> vec2d{
+        {0, 1, 2, 3},
+        {4, 5, 6, 7},
+        {8, 9, 10, 11},
+        {12, 13, 14, 15},
+    };
+    std::cout << std::boolalpha << ex3::is_contiguous(vec2d);
     // ex5, I did try different variations and it always returned true.
     // but i think it isnt always contiguous
-    std::cout << "vec 2d: " << std::boolalpha
-              << ex3::is_contiguous(vec2d.begin(), vec2d.end()) << '\n';
 }
