@@ -27,9 +27,7 @@ public:
     std::cout << "moved!\n";
     if (this != &other) {
       this->m_data = other.m_data;
-      this->instance_count = other.instance_count;
       other.m_data = nullptr;
-      --other.instance_count;
     }
     other.is_moved_object = true;
     return *this;
