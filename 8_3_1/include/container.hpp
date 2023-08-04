@@ -1,6 +1,7 @@
 #ifndef CONTAINER_HPP
 #define CONTAINER_HPP
 
+#include <algorithm>
 #include <initializer_list> // for init list
 #include <iostream>         // for printing
 #include <limits>           // for limits
@@ -89,8 +90,7 @@ public: // overloads
 
   // == overload
   constexpr bool operator==(const array &other) const noexcept {
-    return (this->size() == other.size() && this->begin() == other.begin() &&
-            this->end() == other.end());
+    return std::equal(this->begin(), this->end(), other.begin(), other.end());
   }
 
   // != overload

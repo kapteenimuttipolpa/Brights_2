@@ -57,4 +57,10 @@ TEST_CASE("test oma::array") {
     }
     CHECK(sum == 6);
   }
+  SUBCASE("TEST ==") {
+    oma::array<int, 2> test_arr{1, 2};
+    oma::array<int, 2> test_arr2{1, 2};
+    CHECK(test_arr == test_arr2);
+    CHECK_FALSE(test_arr != test_arr2);
+  }
 }
