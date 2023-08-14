@@ -18,7 +18,7 @@ int main()
     threads.reserve(t_count);
     for (int i = 0; i < t_count; ++i)
     {
-        threads.emplace_back(add, 5, 5);
+        threads.emplace_back(add, 500, 50000);
     }
     for (int i = 0; i < t_count; ++i)
     {
