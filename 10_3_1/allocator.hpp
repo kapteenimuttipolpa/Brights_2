@@ -9,7 +9,6 @@ class allocator
 {
   public:
     using value_type = T;
-    using alloc_storage_type = uint8_t *;
 
     allocator() noexcept = default;
 
