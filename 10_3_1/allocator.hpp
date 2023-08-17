@@ -29,12 +29,13 @@ class allocator
         void *raw_memory = &_mem_pool[current_index];
         current_index += n * sizeof(T);
 
-        T *allocated_ptr = new (raw_memory) T[n]; // Placement new ..? i think
+        T *allocated_ptr = new (raw_memory) T[n]; // Placement new
 
         return allocated_ptr;
     }
-    constexpr void deallocate(T *p, std::size_t n) noexcept
+    constexpr void deallocate(T *p, std::size_t) noexcept
     {
+        p->~T();
     }
     constexpr std::size_t max_size() const noexcept
     {
